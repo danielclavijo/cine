@@ -1,0 +1,142 @@
+body{
+    margin:0;
+    padding:0;
+    font-family: sans-serif;
+    background-color: #eee;
+}
+
+h2{
+    text-align:center;
+}
+
+.movie-img{
+    z-index: 1;
+    padding:5px;
+    width:182px;
+    height:268px;
+    box-shadow: 1px 2px 4px rgba(0, 0, 0,0.5);
+}
+
+.movie-img:hover{
+    cursor:pointer;
+}
+
+.movie-data{
+    display: none;
+    position:absolute;
+    top:100px;
+    left:500px;
+    height:auto;
+    width:400px;
+    background-color: white;
+    z-index: 10;
+    border:3px solid #ccc;
+}
+.vote-page{
+    display:none;
+    position:absolute;
+    top:100px;
+    left:500px;
+    height:600px;
+    width:600px;
+    padding-left:15px;
+    background-color: white;
+    z-index:11;
+    border: 3px solid #ccc;
+}
+.login-page{
+    position:absolute;
+    top:100px;
+    left:500px;
+    height:400px;
+    width:600px;
+    padding-left:15px;
+    background-color: white;
+    z-index:11;
+    border: 3px solid #ccc;
+}
+#movieWrapper{
+    margin:auto;
+    display:flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+
+    width:75%;
+}
+label{
+    display:inline-block;
+    width:150px;
+    text-align:right;
+}
+.info-div{
+    padding:1em;
+}
+.buy-button{
+    display: block;
+    border: 1px solid black;
+    padding-left:0.5em;
+    padding-top:0.5em;
+    width:12em;
+    margin-top: 1.5em;
+    background-color: #f88;
+}
+.buy-button:hover{
+    cursor:pointer;
+}
+.svg-icon{
+    height:1.5em;
+    width:1.5em;
+}
+#loginForm{
+    display:none;
+}
+#spinnerDiv{
+    position:absolute;
+    top:50%;
+    left:50%;
+
+    height:2em;
+    width:2em;
+
+    margin-top:-1.5em;
+    margin-left:-1.5em;
+}
+#spinner{
+    height:2em;
+    width:2em;
+}
+input{
+    margin:0.5em;
+}
+.hide{
+    display:none;
+}
+
+#closeButton{
+    float:right;
+    width:2em;
+    height:2em;
+    padding:3px;
+    display:none;
+}
+.seat-wrapper {
+    display: inline-block;
+    margin-bottom: 10px;
+}
+#cine{
+    width:400px;
+    height:200px;
+    background-color:#eee;
+    padding:2em;
+    display:none;
+}
+#hourWrapper{
+    display:none;
+    padding-right:1em;
+}
+.unavailable{
+    fill: #f44242;
+}
+.buying{
+    fill: #f4d041;
+}

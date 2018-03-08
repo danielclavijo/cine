@@ -1,0 +1,47 @@
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title>Cine</title>
+    <link rel="stylesheet" type="text/css" href="css/materialize.min.css">
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+</head>
+<body>
+    <h2>Cine</h2>
+    <div id="movieWrapper">
+
+    </div>
+    <div id="loginForm">
+        <div class="input-field col s6">
+            <label for="name">Nombre y apellidos: </label>
+            <input type="text" id="name" required class="validate">
+        </div>
+        <div class="input-field col s4">
+            <label for="email">e-mail</label>
+            <input type="email" id="email" required class="validate">
+        </div>
+        <div class="input-field col s4">
+            <label for="address">Dirección</label>
+            <input type="text" id="address" required class="validate">
+        </div>
+    </div>
+    <div id="hourWrapper">
+        <p>Comprando <span id="numBuying">0</span> entradas por <span id="priceBuying">0</span>€ (6€/ entrada)</p><br>
+        <select id="hourForm"  class="browser-default">
+            <option value="" disabled selected>Escoja un hora</option>
+            <option value="1">10:00</option>
+            <option value="2">18:00</option>
+        </select>
+    </div>
+    <div id="cine">
+    </div>
+    <img src="img/close.svg" id="closeButton">
+    <div id="spinnerDiv"> <img src="img/spinner.gif" id="spinner"/></div>
+
+    <script src="js/jquery-3.3.1.js"></script>
+    <script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
+    <script src="js/materialize.js"></script>
+    <script src="js/pagination.js"></script>
+    <script src="js/lib.js"></script>
+    <script src="js/main.js"></script>
+</body>
+</html>
